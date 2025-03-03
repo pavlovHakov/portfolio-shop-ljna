@@ -1,0 +1,346 @@
+.wrapper-basket {
+  padding: clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem);
+}
+/* header */
+.header {
+  position: fixed;
+}
+
+.empty-bascet {
+  width: 142px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: start;
+  background: none;
+}
+.block-logo {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.back {
+  font-size: 17px;
+  color: var(--color-body);
+  text-decoration: none;
+  margin-bottom: 49px;
+  display: inline-block;
+  font-weight: 200;
+  cursor: pointer;
+}
+.back img {
+  transform: rotate(45deg);
+}
+.content-basket {
+  width: auto;
+  height: auto;
+  display: flex;
+  /* padding-right: 25px; 7px*/
+}
+.block-img-icon {
+  width: 26px;
+  height: auto;
+}
+.width-icon-user {
+  width: 21px;
+  margin-right: 15px;
+}
+.block-img-icon a img {
+  width: 100%;
+  height: auto;
+}
+
+/* contant */
+
+.block-description {
+  width: 30%;
+  height: 100%;
+  /* padding-left: 50px; */
+  padding-left: clamp(1.0625rem, -4.023rem + 5.9567vw, 3.125rem);
+  /* padding-right: 96px; */
+  padding-right: clamp(1.0625rem, -11.1119rem + 14.2599vw, 6rem);
+}
+.block-coments-stil {
+  width: 100%;
+  height: auto;
+  /* padding-left: 40px; */
+  padding-left: clamp(0.375rem, -4.8646rem + 6.1372vw, 2.5rem);
+}
+.basket-title {
+  font-family: var(--font-Roboto);
+  /* font-size: 40px; 23px*/
+  font-size: clamp(1.4375rem, 1.0684rem + 1.193vw, 2.5rem);
+  /* line-height: 60px; */
+  line-height: clamp(1.9375rem, 1.3079rem + 2.0351vw, 3.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title-coments-stil {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  border-bottom: 1px solid;
+  display: inline-block;
+}
+.text-coments-stil {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+.description-ul {
+  padding-left: clamp(0.6875rem, 0.0579rem + 2.0351vw, 2.5rem);
+}
+.description-ul-title {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  display: inline-block;
+}
+.block-img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.img-presents,
+.video-presents {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.video-presents {
+  margin-bottom: -6px;
+}
+
+/* block-purhases */
+
+.mobile-block-purchases {
+  width: 100%;
+  height: 100%;
+  padding: 12px 9px;
+  display: none;
+}
+.mobile-basket-price {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.block-purchases {
+  width: 30%;
+  height: 100%;
+  /* padding: 100px 56px; */
+  padding: clamp(2.1875rem, -7.8294rem + 11.7329vw, 6.25rem)
+    clamp(0.5625rem, -0.4468rem + 3.289vw, 3.5rem);
+}
+.basket-price {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 10px;
+}
+.basket-price span,
+.mobile-basket-price span {
+  color: #343840;
+  text-decoration: line-through;
+}
+.block-purchases-content {
+  width: 100%;
+  height: auto;
+}
+
+/* /////// */
+.block-size {
+  width: 100%;
+  height: auto;
+}
+.block-size h3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.item-size-cnp {
+  font-size: 14px;
+  padding: 6px 17px;
+  margin-right: 6px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #c1bfbf;
+  color: #302b2a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+  line-height: 20px;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+.size-cnp-active {
+  background: #302b2a;
+  color: #fff;
+}
+.cnp-purchases-basket,
+.cnp-purchases-buy {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #443e3e;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.cnp-purchases-basket:hover {
+  background: #222;
+}
+.cnp-purchases-buy {
+  border: 1px solid #302b2a;
+  color: #302b2a;
+  background: #fff;
+  margin-top: 10px;
+}
+
+/* modal-window */
+
+.modal-window,
+.modal-window-answer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  animation: showModalOpacity 0.5s;
+}
+.modal-hide {
+  display: none;
+}
+@keyframes showModalOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.block-pustoi,
+.block-pustoi-answer {
+  width: 77%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+.sidebar {
+  min-width: 400px;
+  width: 23%;
+  height: 100vh;
+  background: #fff;
+  padding: 0 38px 15px 25px;
+}
+.basket-block-title {
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+.text-title,
+.sidebar-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 63px;
+}
+.sidebar-title {
+  text-align: left;
+  line-height: 56px;
+}
+.sidebar-text {
+  margin-top: -17px;
+  line-height: 24px;
+}
+.block-sidebar-img {
+  width: auto;
+  height: auto;
+  height: 20px;
+  padding: 5px;
+  position: absolute;
+  right: 28px;
+  top: 15px;
+  cursor: pointer;
+}
+.block-sidebar-img.rightX {
+  right: -7px;
+}
+
+.block-sidebar-img img,
+.block-sidebar-img-form img {
+  width: 13px;
+  height: 13px;
+}
+/* @media screen and (max-width: 1274px) {
+  .sidebar {
+    width: 400px;
+  }
+} */
+@media screen and (max-width: 945px) {
+  .wrapper-basket {
+    padding: 0;
+  }
+  .block-description {
+    display: none;
+  }
+  .block-purchases,
+  .block-img {
+    width: 50%;
+  }
+  .mobile-block-description {
+    display: block;
+  }
+  .empty-bascet {
+    display: none;
+  }
+}
+/* @media screen and (max-width: 800px) {
+  .empty-bascet {
+    display: none;
+  }
+} */
+@media screen and (max-width: 596px) {
+  .block-coments-stil {
+    display: none;
+  }
+}
+@media screen and (max-width: 491px) {
+  .block-purchases {
+    display: none;
+  }
+  .mobile-block-purchases {
+    display: block;
+  }
+  .block-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 398px) {
+  .sidebar {
+    min-width: 100%;
+  }
+}

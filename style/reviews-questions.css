@@ -1,0 +1,290 @@
+.reviews-questions {
+  width: 100%;
+  height: auto;
+  padding: 0 184px;
+}
+.reviews_questions-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 84px;
+  /* padding-bottom: 28px; */
+  padding-bottom: clamp(1.75rem, -1.9836rem + 6.028vw, 5.25rem);
+  /* padding-top: 31px; */
+  padding-top: clamp(1.9375rem, -1.5961rem + 5.7051vw, 5.25rem);
+}
+.marg-left {
+  margin-left: 30px;
+}
+
+.reviews_questions-nav span {
+  font-family: var(--font-Roboto);
+  /* font-size: 51px; */
+  font-size: clamp(2.25rem, 1.2138rem + 1.6447vw, 3.1875rem);
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  /* line-height: 66px; */
+  line-height: clamp(2.75rem, 1.2303rem + 2.4123vw, 4.125rem);
+  letter-spacing: -1px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.reviews_questions-nav .active-nav-reviews_questions {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 3px solid rgba(0, 0, 0, 1);
+  animation: showBorder 0.7s;
+}
+@keyframes showBorder {
+  0% {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+  }
+  100% {
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.reviews_questions-block {
+  width: 100%;
+  /* padding: 0 159px; */
+  padding: 0 clamp(0.625rem, -2.352rem + 14.8851vw, 9.9375rem);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.reviews-block,
+.questions-block {
+  width: 49.7%;
+  background: var(--bs-gray-200);
+  padding: clamp(0.5625rem, -0.017rem + 1.2121vw, 1.4375rem);
+  color: var(--color-body);
+  border: 1px solid #dadada;
+}
+.percent-reviews-block,
+.img-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-flex {
+  margin-left: 10px;
+}
+.percent-reviews-block {
+  margin-bottom: 24px;
+}
+.percent-reviews-block h1 {
+  font-family: var(--font-Roboto);
+  font-size: clamp(2.5rem, 1.6711rem + 1.3158vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.percent-reviews-block .flex-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percent-reviews-block .img-wrapp {
+  /* width: 35px; */
+  width: clamp(1.6875rem, 1.1349rem + 0.8772vw, 2.1875rem);
+  height: auto;
+  /* margin-left: 3px; */
+  margin-left: clamp(0.0625rem, -0.0757rem + 0.2193vw, 0.1875rem);
+}
+.margTop {
+  margin-top: 1px;
+}
+.img-wrapp img {
+  width: 100%;
+  height: auto;
+}
+.img-subtext {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 23px;
+  text-align: center;
+}
+.title-reviews-block,
+.percent-questions-block {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.title-reviews-block h1,
+.percent-questions-block h1 {
+  font-family: var(--font-Roboto);
+  /* font-size: 32px; */
+  font-size: clamp(1.5rem, 0.9474rem + 0.8772vw, 2rem);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+.vopros-block-img {
+  width: 123px;
+  height: auto;
+  margin: 0 auto;
+}
+.vopros-block-img img {
+  width: 100%;
+  height: auto;
+}
+.title-reviews-block button,
+.percent-questions-block button {
+  width: 62%;
+  height: 40px;
+  background: var(--color-body);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.percent-reviews-block .block-star {
+  padding-top: 26px;
+}
+
+/* chat-content */
+.chat {
+  width: 100%;
+  height: auto;
+  padding: 0 clamp(0.625rem, -1.2375rem + 9.3125vw, 9.9375rem);
+  display: none;
+}
+.active-chat {
+  display: block;
+}
+.elem-chat .img-wrapp {
+  width: 20px;
+  height: auto;
+  margin-left: 0;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+.elem-chat .img-flex {
+  margin-left: -2px;
+  justify-content: left;
+}
+.elem-text p {
+  line-height: 20px;
+}
+
+.product-data {
+  display: flex;
+  justify-content: space-between;
+}
+.block-left {
+  text-align: left;
+}
+.elem-chat-name {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.elem-size span,
+.elem-color span {
+  opacity: 0.7;
+}
+.elem-color {
+  line-height: 0;
+  margin-bottom: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
+}
+
+.block-right {
+  text-align: right;
+  opacity: 0.7;
+}
+.block-right i {
+  display: inline-block;
+}
+.elem-answer {
+  display: inline-block;
+  margin-top: 13px;
+  margin-left: 4px;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.elem-answer::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  background: url(/img/svg/arrow-chat.svg) no-repeat;
+  background-size: cover;
+}
+
+/* chat-question */
+.chat-question {
+  width: 100%;
+  height: auto;
+  /* padding: 0 159px; */
+}
+.styl {
+  border: 1px solid #dadada;
+  padding: 12px 12px 0 12px;
+}
+.item-chat-cnp {
+  font-size: 13px;
+  padding: 6px 17px;
+  margin-right: 6px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #302b2a;
+  color: #302b2a;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+  line-height: 20px;
+  cursor: pointer;
+}
+.cnp-chat-active {
+  background: #302b2a;
+  color: #fff;
+}
+
+@media screen and (max-width: 940px) {
+  .vopros-block-img,
+  .percent-reviews-block {
+    display: none;
+  }
+}
+@media screen and (max-width: 765px) {
+  .title-reviews-block h1,
+  .percent-questions-block h1 {
+    font-weight: 400;
+    font-size: clamp(0.9375rem, 0.6678rem + 1.3483vw, 1.3125rem);
+  }
+  .title-reviews-block button,
+  .percent-questions-block button {
+    width: 100%;
+  }
+  .reviews_questions-nav {
+    padding: clamp(0.6875rem, -0.6159rem + 6.5169vw, 2.5rem);
+  }
+  .reviews_questions-nav .active-nav-reviews_questions {
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+  }
+  .reviews_questions-nav span {
+    font-size: clamp(1.5rem, 1rem + 1vw, 2rem);
+    line-height: clamp(2rem, 1.5rem + 1vw, 3rem);
+  }
+  .reviews_questions-block {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .reviews-block,
+  .questions-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

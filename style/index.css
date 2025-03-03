@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--body-color);
+  padding: 0;
+  margin: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  left: 0;
+}
+.wrapper {
+  max-width: 1920px;
+  /* 170, 15,15 */
+  padding: clamp(5.3125rem, 3.9661rem + 2.4762vw, 6.9375rem)
+    clamp(0rem, -0.1875rem + 0.9375vw, 0.9375rem) 15px;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.empty {
+  width: 142px;
+}
+.header-top {
+  width: 100%;
+  padding: 26px clamp(0.5rem, 0.1349rem + 1.1896vw, 1.5625rem);
+  display: flex;
+  justify-content: space-between;
+}
+/* mobile-menu */
+
+/* burger-menu */
+.cnp-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 40 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* ///// */
+.block-logo,
+.basket-block-logo {
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.block-logo h1,
+.basket-block-logo h1 {
+  font-family: var(--logo-font);
+  font-size: clamp(2.5rem, 2.1875rem + 1.5625vw, 4.0625rem);
+  color: rgb(0, 0, 0);
+  line-height: 0;
+  letter-spacing: 6px;
+}
+.wrapp-icon {
+  display: inline-block;
+  width: auto;
+  padding-right: clamp(0rem, -0.3125rem + 1.5625vw, 1.5625rem);
+}
+.block-img-icon {
+  width: 26px;
+  height: auto;
+}
+.wrapp-img img {
+  width: 100%;
+  height: auto;
+}
+.header-bottom {
+  padding: 0 15px;
+}
+
+.block-title h2 {
+  padding-top: 26px;
+  font-weight: 100;
+}
+
+/* block-menu */
+.nav-headrer-index {
+  max-width: 1300px;
+  margin: 0 auto clamp(4.5625rem, 3.7113rem + 1.5947vw, 5.625rem);
+}
+.block-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card-menu {
+  width: 15%;
+  height: auto;
+  background-color: #fef6eb;
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
+  box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.card-menu:hover {
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.img-card-menu img {
+  max-width: 100%;
+  height: auto;
+}
+.card-menu-info {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: clamp(0.8125rem, 0.725rem + 0.2292vw, 1rem);
+  line-height: clamp(1rem, 0.9417rem + 0.1528vw, 1.125rem);
+  left: 0;
+  bottom: -47px;
+  text-align: center;
+  color: #443e3e;
+}
+
+.active-card {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 13px 0px rgba(112, 108, 112, 0);
+  font-weight: 600;
+}
+a.card-menu.active-card:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.up-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 35px;
+  height: 35px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 29px;
+  border-radius: 50px;
+  background: rgb(239, 205, 210);
+  box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
+  cursor: pointer;
+  z-index: 10;
+}
+/* Поднятия вверх */
+.up-button img {
+  width: 16px;
+  height: 16px;
+}
+.button-up_hide {
+  display: none;
+}
+
+/* content */
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-content {
+  width: 24.7%;
+  min-width: 293px;
+  height: auto;
+  background-color: #fff;
+  margin-bottom: 0.3%;
+  position: relative;
+}
+
+.card-content-info {
+  width: 98%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 1% 1%;
+  padding: 7px 7px;
+  cursor: auto;
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+.card-content-info p {
+  line-height: 7px;
+}
+.card-content:hover .card-content-info {
+  background-color: rgba(255, 255, 255, 1);
+}
+.newPrice {
+  color: red;
+}
+.oldPrice {
+  position: relative;
+}
+.percent {
+  color: rgb(180, 98, 98);
+  font-weight: 600;
+}
+
+.oldPrice:before {
+  border-bottom: 1px solid red;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 34%;
+  transform: rotate(-18deg);
+}
+.cnp-info {
+  outline: 0;
+  border: 0;
+  display: inline-block;
+  background-color: hwb(40 95% 0%);
+  color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.cnp-info:hover {
+  color: #535353;
+  border: 1px solid #666666;
+}
+.card-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1216px) {
+  .content {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .empty {
+    display: none;
+  }
+}
+@media screen and (max-width: 948px) {
+  .card-content {
+    width: 49.7%;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .wrapper {
+    padding-top: 1px;
+  }
+  .block-menu {
+    display: none;
+  }
+  .block-logo {
+    display: none;
+  }
+  .cnp-menu {
+    display: flex;
+  }
+  .header-top {
+    align-items: center;
+    padding-top: 8px;
+  }
+  .nav-headrer-index {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .card-content {
+    width: 74.7%;
+  }
+}
+@media screen and (max-width: 445px) {
+  .card-content {
+    width: 100%;
+  }
+  .cnp-menu svg {
+    width: 37px;
+    height: 37px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .basket-price span {
+    display: block;
+  }
+}
