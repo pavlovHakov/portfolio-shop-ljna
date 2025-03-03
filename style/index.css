@@ -1,4 +1,12 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -39,7 +47,11 @@ ul {
 .header-top {
   width: 100%;
   padding: 26px clamp(0.5rem, 0.1349rem + 1.1896vw, 1.5625rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 /* mobile-menu */
@@ -56,6 +68,10 @@ ul {
   fill: none;
   stroke: black;
   stroke-width: 6;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -132,7 +148,11 @@ ul {
 .block-menu {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .card-menu {
@@ -140,13 +160,15 @@ ul {
   height: auto;
   background-color: #fef6eb;
   -webkit-box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
-  -moz-box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
   box-shadow: 0px 2px 9px 0px rgba(212, 212, 212, 1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
   position: relative;
 }
 .card-menu:hover {
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -170,6 +192,7 @@ ul {
 .active-card {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 2px 13px 0px rgba(112, 108, 112, 0);
   box-shadow: 0px 2px 13px 0px rgba(112, 108, 112, 0);
   font-weight: 600;
 }
@@ -188,6 +211,7 @@ a.card-menu.active-card:hover {
   line-height: 29px;
   border-radius: 50px;
   background: rgb(239, 205, 210);
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
   box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
   cursor: pointer;
   z-index: 10;
@@ -204,8 +228,13 @@ a.card-menu.active-card:hover {
 /* content */
 .content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .card-content {
@@ -229,8 +258,14 @@ a.card-menu.active-card:hover {
   padding: 7px 7px;
   cursor: auto;
   border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .card-content-info p {
@@ -256,6 +291,8 @@ a.card-menu.active-card:hover {
   content: "";
   width: 100%;
   height: 34%;
+  -webkit-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
 .cnp-info {
@@ -281,6 +318,7 @@ a.card-menu.active-card:hover {
 
 @media screen and (max-width: 1216px) {
   .content {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 }
@@ -306,9 +344,13 @@ a.card-menu.active-card:hover {
     display: none;
   }
   .cnp-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .header-top {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 8px;
   }
