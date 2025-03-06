@@ -1,8 +1,13 @@
 // бургер меню
 
-function myFunction(x) {
-  x.classList.toggle("change");
-}
+const wrapp_mobile = document.querySelector(".wrapp-mobile-header-menu");
+const cnp__menu = document.querySelector(".cnp-menu");
+const sidebur__menu = document.querySelector(".sidebur-header-menu");
+
+cnp__menu.addEventListener("click", () => {
+  wrapp_mobile.classList.toggle("active-wrapp-mobile");
+  sidebur__menu.classList.toggle("active-header-menu");
+});
 
 // Поднятие вверх
 
