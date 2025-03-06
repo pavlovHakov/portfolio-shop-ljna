@@ -102,8 +102,9 @@ ul {
 }
 .sidebur-header-menu li {
   display: block;
-  padding-top: clamp(0.1875rem, -0.0372rem + 1.1236vw, 0.5625rem);
-  padding-bottom: clamp(0.1875rem, -0.0372rem + 1.1236vw, 0.5625rem);
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #000;
   background: rgba(230, 229, 229, 0);
   cursor: pointer;

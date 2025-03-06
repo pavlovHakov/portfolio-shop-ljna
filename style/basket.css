@@ -382,4 +382,7 @@
   .sidebar {
     min-width: 100%;
   }
+  .block-help {
+    display: none;
+  }
 }
