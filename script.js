@@ -1,17 +1,30 @@
 // сокрытие и показ блока справки
+// сокрытие и показ border и box-shadow для header
 
 let block_help = document.querySelector(".block-help");
+let header = document.querySelector(".header");
 
 function show() {
   block_help.classList.remove("hide-help");
 }
+
+function showBorderHeader() {
+  header.classList.remove("hide-border-shadow-header");
+}
+
 function hide() {
   block_help.classList.add("hide-help");
 }
+function hideBorderHeader() {
+  header.classList.add("hide-border-shadow-header");
+}
+
+// scroiiWindow событие
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
-  console.log(scrollY);
 
+  scrollY > 5 ? showBorderHeader() : hideBorderHeader();
   scrollY > 900 ? hide() : show();
 });
 

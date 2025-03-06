@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/fonts/robotocondensed.css" />
+    <link rel="stylesheet" href="/loader.css" />
     <link rel="stylesheet" href="style/variable.css" />
     <link rel="stylesheet" href="/style/basket.css" />
     <link rel="stylesheet" href="/style/viewed.css" />
@@ -20,48 +21,52 @@
 
   <body>
     <div class="wrapper">
-      <!-- HEADER -->
-      <div class="header">
-        <!-- HEADER TOP -->
-        <div class="header-top">
-          <div class="empty"></div>
+      <!-- HEADER TOP -->
+      <div class="header hide-border-shadow-header">
+        <div class="empty"></div>
 
-          <a href="/" class="block-logo">
-            <h1>Lyana</h1>
-          </a>
+        <a href="/" class="block-logo">
+          <h1>Lyana</h1>
+        </a>
 
-          <!-- mobile-menu -->
+        <!-- burger -->
+        <button
+          class="cnp-menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+        <div class="block-icons">
+          <div class="wrapp-icon margRight">
+            <div class="block-img-icon users-black"></div>
 
-          <button
-            class="cnp-menu"
-            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-            aria-label="Main Menu"
-          >
-            <svg width="50" height="50" viewBox="0 0 100 100">
-              <path
-                class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-              />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path
-                class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-              />
-            </svg>
-          </button>
+            <div class="block-img-icon users-white"></div>
+          </div>
 
-          <div class="wrapp-icon" id="showScroll">
-            <a href="!#">
-              <div class="block-img-icon">
-                <img src="/img/svg/basket-shopping-solid.svg" alt="basket" />
-              </div>
-            </a>
+          <div class="wrapp-icons">
+            <div class="block-img-icon basket-black"></div>
+
+            <div class="block-img-icon basket-white"></div>
           </div>
         </div>
       </div>
 
+      <!-- mobile-menu -->
+      <div class="mobile-header-menu"></div>
+
       <!-- MENU -->
-      <nav class="nav-headrer-index">
+      <nav>
         <div class="block-menu">
           <a href="#!" class="card-menu active-card">
             <div class="img-card-menu">
@@ -109,6 +114,8 @@
       <div class="up-button button-up_hide">
         <img src="./img/svg/arrow-up-solid.svg" alt="up" />
       </div>
+
+      <!-- <div class="loader"></div> -->
 
       <div class="content">
         <a href="/basket.html" class="card-content">
@@ -360,6 +367,7 @@
     ></script>
 
     <script src="/index.js"></script>
+    <script src="/script.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.min.js"

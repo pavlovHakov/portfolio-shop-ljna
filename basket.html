@@ -22,32 +22,55 @@
 
 <body>
    <div class="wrapper-basket">
-      <div class="header">
          <!-- HEADER -->
-         <div class="header-top">
-            <div class="empty-bascet"></div>
-            <a href="./index.html" class="basket-block-logo">
-               <h1>Lyana</h1>
-            </a>
+         <div class="header hide-border-shadow-header ">
 
-            <div class="content-basket">
-               <div class="block-img-icon width-icon-user">
-                  <a href="!#"><img src="/img/svg/user-solid.svg" alt="user" /></a>
-               </div>
-               <div class="block-img-icon">
-                  <a href="#!">
-                     <img src="/img/svg/basket-shopping-solid.svg" alt="basket" />
-                  </a>
-               </div>
+                  <!-- burger -->
+        <button
+        class="cnp-menu"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu"
+      >
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path
+            class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+          />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path
+            class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+          />
+        </svg>
+      </button>
+             
+              <div class="empty-bascet"></div>
+
+               <a href="/" class="block-logo">
+                  <h1>Lyana</h1>
+               </a>
+           
+               <div class="block-icons">
+                  <div class="wrapp-icon margRight">
+                    <div class="block-img-icon users-black"></div>
+        
+                    <div class="block-img-icon users-white"></div>
+                  </div>
+        
+                  <div class="wrapp-icons">
+                    <div class="block-img-icon basket-black"></div>
+        
+                    <div class="block-img-icon basket-white"></div>
+                  </div>
+                </div>
             </div>
          </div>
-      </div>
       <!-- CONTENT -->
 
       <div class="content-basket">
          <section class="block-description">
-            <a href="./index.html" class="back"><img src="/img/svg/arrow-figure.svg" width="48px
-              " alt="назад" />&emsp;<span>назад</span></a>
+            <a href="./index.html" class="back"><img src="/img/svg/erow-left.png" width="48px
+              " alt="назад" /></a>
 
             <h1 class="basket-title">Двухбортный жакет oversize оттенка кемел</h1>
             <div class="block-coments-stil">
