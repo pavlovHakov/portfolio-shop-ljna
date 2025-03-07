@@ -82,6 +82,10 @@ function addActiveCnp(elem, style) {
   });
 }
 
+// активный nav блок меню
+
+addActiveCnp("card-menu", "active-card");
+
 // активная кнопка - размеры
 addActiveCnp("item-size-cnp", "size-cnp-active");
 
