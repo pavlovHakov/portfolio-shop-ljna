@@ -326,6 +326,13 @@
   width: 13px;
   height: 13px;
 }
+
+
+@media screen and (max-width: 1203px) {
+.block-help {
+  display: none;
+}
+}
 @media screen and (max-width: 854px) {
   .block-description,
   .empty-bascet,

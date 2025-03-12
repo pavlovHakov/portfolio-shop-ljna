@@ -32,6 +32,7 @@ ul {
   position: relative;
   padding: clamp(3.5rem, 2.6459rem + 3.0034vw, 6.25rem)
     clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem) 50px;
+    padding-top: 55px;
 }
 
 .empty {
@@ -42,7 +43,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: clamp(3.8125rem, 3.325rem + 2.4375vw, 6.25rem);
+  height: clamp(4.375rem, -0.0109rem + 5.2174vw, 6.25rem);
   padding: 0 clamp(0.5rem, 0.1349rem + 1.1896vw, 1.5625rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,8 +98,8 @@ ul {
   position: absolute;
   display: flex;
   justify-content: center;
-  padding-top: 47px;
-  margin-top: -7px;
+  padding-top: 63px;
+  margin-top: -16px;
 }
 .sidebur-header-menu li {
   display: block;
@@ -497,32 +498,8 @@ a.card-menu.active-card:hover {
   .empty {
     display: none;
   }
-}
-@media screen and (max-width: 948px) {
-  .card-content {
-    width: 49.7%;
-  }
-}
 
-@media screen and (max-width: 854px) {
-  .block-menu,
-  .block-logo {
-    display: none;
-  }
-  .cnp-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav-headrer-index {
-    padding-top: 0;
-  }
-  .header {
-    padding-top: 0;
-  }
-  .block-icons {
-    margin-right: 10px;
-  }
+
   .wrapp-icon {
     width: 30px;
   }
@@ -542,7 +519,6 @@ a.card-menu.active-card:hover {
     width: 30px;
     height: 30px;
   }
-
   .users-white::after {
     content: "";
     width: 30px;
@@ -560,11 +536,40 @@ a.card-menu.active-card:hover {
     top: 0;
     left: 0;
   }
-  /* .sidebur-header-menu ul {
-    padding: clamp(0.5625rem, 0.475rem + 0.4375vw, 1rem);
-  } */
+}
+@media screen and (max-width: 948px) {
+  .card-content {
+    width: 49.7%;
+  }
 }
 
+@media screen and (max-width: 854px) {
+
+  .block-menu,
+  .block-logo {
+    display: none;
+  }
+  .cnp-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-headrer-index {
+    padding-top: 0;
+  }
+  .header {
+    height: 55px;
+    padding-top: 0;
+  }
+  .block-icons {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 818px) {
+  .header{
+    height: 57px;
+  }
+}
 @media screen and (max-width: 632px) {
   .card-content {
     width: 74.7%;
