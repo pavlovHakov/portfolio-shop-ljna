@@ -30,9 +30,8 @@ ul {
   width: 100%;
   height: auto;
   position: relative;
-  padding: clamp(3.5rem, 2.6459rem + 3.0034vw, 6.25rem)
+  padding: clamp(3.4375rem, 0.801rem + 4.5409vw, 6.25rem)
     clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem) 50px;
-    padding-top: 55px;
 }
 
 .empty {
@@ -148,8 +147,7 @@ ul {
   padding-left: clamp(0.5625rem, 0.475rem + 0.4375vw, 1rem);
   padding-right: clamp(0.5625rem, 0.475rem + 0.4375vw, 1rem);
 }
-.mobile-menu-info {
-}
+
 /* burger-menu */
 .cnp-menu {
   width: auto;
@@ -201,18 +199,19 @@ ul {
 
 /* ///// */
 .block-logo {
-  padding: 15px 0;
+  padding: 15px 0 15px 24px;
   text-align: center;
   text-decoration: none;
 }
 .block-logo h1,
 .basket-block-logo h1 {
   font-family: var(--logo-font);
-  font-size: clamp(2.5rem, 2.1875rem + 1.5625vw, 4.0625rem);
+  font-size: clamp(1.5625rem, 1.0625rem + 2.5vw, 4.0625rem);
   color: rgb(0, 0, 0);
   font-weight: 400;
   line-height: 0;
-  letter-spacing: 6px;
+  letter-spacing: clamp(0rem, -0.075rem + 0.375vw, 0.375rem);
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
 }
 .block-icons {
   width: auto;
@@ -224,14 +223,8 @@ ul {
   display: inline-block;
 }
 .margRight {
-  margin-right: 15px;
+  margin-right: clamp(0.6875rem, 0.6375rem + 0.25vw, 0.9375rem);
 }
-/* .block-img-icon {
-  width: 34px;
-  height: auto;
-  cursor: pointer;
-  position: relative;
-} */
 .users-black {
   width: 34px;
   height: 34px;
@@ -301,10 +294,6 @@ ul {
   top: 0;
   left: 0;
 }
-/* .block-img-icon img {
-  width: 100%;
-  height: auto;
-} */
 
 .header-bottom {
   padding: 0 15px;
@@ -545,8 +534,7 @@ a.card-menu.active-card:hover {
 
 @media screen and (max-width: 854px) {
 
-  .block-menu,
-  .block-logo {
+  .block-menu{
     display: none;
   }
   .cnp-menu {
@@ -560,9 +548,6 @@ a.card-menu.active-card:hover {
   .header {
     height: 55px;
     padding-top: 0;
-  }
-  .block-icons {
-    margin-right: 10px;
   }
 }
 @media screen and (max-width: 818px) {
@@ -581,6 +566,10 @@ a.card-menu.active-card:hover {
     height: 56px;
     background: #000;
     border-bottom: 1px solid #fff;
+  }
+  .block-logo h1{
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.8);
   }
   .users-black {
     display: none;
