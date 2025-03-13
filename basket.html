@@ -7,7 +7,7 @@
 
    <link rel="stylesheet" href="style/variable.css" />
    <link rel="stylesheet" href="./style/fonts/robotocondensed.css" />
-   <link rel="stylesheet" href="/style/viewed.css">
+   <link rel="stylesheet" href="/style/sliders.css">
 
    <link rel="stylesheet" href="/style/index.css">
    <link rel="stylesheet" href="/style/block-help.css" />
@@ -69,7 +69,7 @@
                   </div>
                 </div>
             </div>
-         </div>
+      
 
            <!-- mobile-menu -->
       <div class="wrapp-mobile-header-menu">
@@ -113,10 +113,14 @@
             </ul>
          </section>
 
-         <!-- block-img -->
+         <!-- block-video -->
          <section class="block-img">
-            <div class="img-presents">
-               <img src="img/content/bascet/img-1.webp" class="img-fluid" alt="img" />
+
+            <div class="video-presents">
+               <video width="100%" height="auto" autoplay muted loop>
+                  <source src="https://img.gepur.com/product-video-thumb/45171/1200_66aca965a1d2b.mp4"
+                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+               </video>
             </div>
 
             <!-- mobile-block-purchases -->
@@ -141,23 +145,6 @@
                   </div>
                </div>
             </section>
-
-
-            <!-- Простой пример с видео -->
-
-            <div class="video-presents">
-               <video width="100%" height="auto" autoplay muted loop>
-                  <source src="https://img.gepur.com/product-video-thumb/45171/1200_66aca965a1d2b.mp4"
-                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-               </video>
-            </div>
-
-            <div class="img-presents">
-               <img src="img/content/bascet/img-4.webp" class="img-fluid" alt="img" />
-            </div>
-            <div class="img-presents">
-               <img src="img/content/bascet/img-3.webp" class="img-fluid" alt="img" />
-            </div>
          </section>
 
          <!-- block-purchase -->
@@ -183,7 +170,55 @@
             </div>
 
          </section>
-      </div>
+       </div>      
+        <!-- Slider-basket -->
+
+         <section>
+            <div class="wrapper-slider-basket">
+
+               <div class="wrapper-slider">
+                  <div class="slider-basket">
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-1.webp" alt="img" />
+                      </div>
+                    </a>
+        
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-2.webp" alt="img" />
+                      </div>
+                    </a>
+        
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-1.webp" alt="img" />
+                      </div>
+                    </a>
+        
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-2.webp" alt="img" />
+                      </div>
+                    </a>
+        
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-1.webp" alt="img" />
+                      </div>
+                    </a>
+                    <a href="#!" class="item-basket">
+                      <div class="img-basket">
+                        <img src="/img/content/bascet/img-1.webp" alt="img" />
+                      </div>
+                    </a>
+                  </div>
+               </div>
+   
+            </div>
+
+         </section>
+      
 
       <!-- block-help -->
       <div class="block-help">
@@ -619,10 +654,10 @@
 
       <!-- viewed-slider -->
 
-      <section class="viewed-block">
-         <h1>Просмотренные товары</h1>
+      
 
-         <div class="wrapper-slider">
+         <div class="wrapper-slider-basket mTop">
+            <h1>Просмотренные товары</h1> 
             <div class="slider-viewed">
 
                <a href="#!" class="item-viewed">
@@ -687,7 +722,6 @@
                </a>
             </div>
          </div>
-      </section>
    </div>
 
    <script src="https://kit.fontawesome.com/d5a94de59d.js" crossorigin="anonymous"></script>

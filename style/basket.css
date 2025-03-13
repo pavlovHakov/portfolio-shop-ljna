@@ -48,8 +48,6 @@
 .content-basket {
   width: auto;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* padding-right: 25px; 7px*/
 }
@@ -186,12 +184,12 @@
   margin-bottom: 15px;
 }
 .item-size-cnp {
-  font-size: 14px;
-  padding: 6px 17px;
+  font-size: 18px;
+  padding: 9px 20px;
   margin-right: 6px;
   text-transform: uppercase;
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 21px;
   border: 1px solid #c1bfbf;
   color: #302b2a;
   display: -webkit-inline-box;
@@ -242,6 +240,13 @@
   background: #fff;
   margin-top: 10px;
 }
+.block-imgs{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /* modal-window */
 

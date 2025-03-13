@@ -362,25 +362,25 @@ a.card-menu.active-card:hover {
 }
 
 .up-button {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  width: 35px;
-  height: 35px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 29px;
-  border-radius: 50px;
-  background: rgb(239, 205, 210);
-  -webkit-box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
-  box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
-  cursor: pointer;
-  z-index: 10;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 39px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50px;
+    background: rgb(239, 205, 210);
+    -webkit-box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
+    box-shadow: 0px 5px 5px -1px rgba(117, 113, 117, 1);
+    cursor: pointer;
+    z-index: 10;
 }
 /* Поднятия вверх */
 .up-button img {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 .button-up_hide {
   display: none;
