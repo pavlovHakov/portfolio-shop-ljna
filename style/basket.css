@@ -6,8 +6,7 @@
 */
 
 .wrapper-basket {
-  padding: clamp(1.1875rem, -1.449rem + 4.5409vw, 4rem)
-    clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem) 50px;
+  padding: 55px clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem) 50px;
 }
 
 .empty-bascet {
@@ -18,6 +17,7 @@
   display: inline-block;
   text-decoration: none;
   padding: 15px 0;
+  margin-top: clamp(0.25rem, -0.0375rem + 1.4375vw, 1.6875rem);
 }
 
 .back {
@@ -27,7 +27,7 @@
   position: absolute;
   transform: rotate(270deg); 
   left: clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem);
-  top: clamp(1.3125rem, 0.5097rem + 1.5023vw, 2.3125rem);
+  top: 14px;
   z-index: 50;
   cursor: pointer;
 }

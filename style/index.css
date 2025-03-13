@@ -42,7 +42,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: clamp(4.375rem, -0.0109rem + 5.2174vw, 6.25rem);
+  height: 55px;
   padding: 0 clamp(0.5rem, 0.1349rem + 1.1896vw, 1.5625rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,7 +52,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   z-index: 50;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(5px);
   border-bottom: 1px solid rgba(196, 196, 196, 1);
   -webkit-box-shadow: 0px 1px 7px -1px rgba(105, 105, 105, 1);
   -moz-box-shadow: 0px 1px 7px -1px rgba(105, 105, 105, 1);
@@ -129,7 +130,8 @@ ul {
 }
 .active-header-menu {
   left: 0;
-  top: clamp(3.8125rem, 3.325rem + 2.4375vw, 6.25rem);
+  top: 71px
+  ;
   animation: workers_HeaderMobile 0.5s;
 }
 @keyframes workers_HeaderMobile {
@@ -546,13 +548,7 @@ a.card-menu.active-card:hover {
     padding-top: 0;
   }
   .header {
-    height: 55px;
     padding-top: 0;
-  }
-}
-@media screen and (max-width: 818px) {
-  .header{
-    height: 57px;
   }
 }
 @media screen and (max-width: 632px) {
@@ -564,7 +560,7 @@ a.card-menu.active-card:hover {
 @media screen and (max-width: 445px) {
   .header {
     height: 56px;
-    background: #000;
+    background: rgba(0, 0, 0, 0.48);
     border-bottom: 1px solid #fff;
   }
   .block-logo h1{
@@ -599,7 +595,7 @@ a.card-menu.active-card:hover {
     stroke: rgb(255, 255, 255);
   }
   .active-header-menu {
-    margin-top: -7px;
+    margin-top: -16px;
   }
 }
 @media screen and (max-width: 416px) {
