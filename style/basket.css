@@ -381,11 +381,11 @@
   }
 }
 @media screen and (max-width: 445px) {
-  .header {
+  /* .header {
     height: 56px;
     background: #000;
     border-bottom: 1px solid #fff;
-  }
+  } */
   .card-content {
     width: 100%;
   }

@@ -408,7 +408,18 @@ a.card-menu.active-card:hover {
   margin-bottom: 0.3%;
   position: relative;
 }
+.card-content img {
+  max-width: 100%;
+  height: auto;
+}
+.card-content:hover {
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.28);
+  -webkit-transform: scale(1.01);
+}
+.card-content:hover img {
 
+}
 .card-content-info {
   width: 98%;
   height: 50px;
@@ -560,8 +571,10 @@ a.card-menu.active-card:hover {
 @media screen and (max-width: 445px) {
   .header {
     height: 56px;
-    background: rgba(0, 0, 0, 0.48);
+    background: rgba(0, 0, 0, 0.28);
     border-bottom: 1px solid #fff;
+    backdrop-filter: blur(5px);
+    /* -webkit-box-shadow: 0px 1px 7px -1px rgba(105, 105, 105, 1); */
   }
   .block-logo h1{
     color: #fff;
